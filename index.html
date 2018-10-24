@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="tekst" />
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
+
+
+    <script src="js/libs/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="clickforlikes">view your likes and dislikes</div>
+<div class="likedropzone"></div>
+
+
+        <div id="surroundbox" class="info"  draggable="true">
+            <div id="content">
+                <img id="image">
+                <p id="name"> </p>
+                <p id="age">
+                    <p>
+                        <p id="location"></p>
+            </div>
+            <div class="clickicon heart" id="heartclick">
+                <img class="heart" src="images/heart.png">
+            </div>
+            <div class="clickicon skip" id="skipclick">
+                <img class="heart" src="images/skip.png">
+            </div>
+            
+        </div>
+        <div class="dislikedropzone"></div>
+
+        <div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+ 
+</script>
+        <div id="output"></div>
+    </div>
+    <div class="yourlikes">
+        <div id="goAwayclick">x</div>
+        <div id="likes">
+            <h1>Your likes</h1>
+            <div id="yourlikes"></div>
+        </div>
+        <div id="dislikes">
+            <h1>Your Dislikes</h1>
+            <div id="yourdislikes"></div>
+        </div>
+    </div>
+
+    <script src="js/libs/jquery-2.1.4.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
