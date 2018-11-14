@@ -1,3 +1,13 @@
+const profileCard = document.getElementById('surroundbox');
+const hammer = new Hammer(profileCard);
+
+hammer.on('swipeleft', function(ev){
+    like();
+});
+
+hammer.on('swiperight', function(ev){
+    dislike();
+});
 mapboxgl.accessToken = 'pk.eyJ1IjoiYnJlYWtpbmcyNjIiLCJhIjoiY2puOWF4d2huMDRtMTNycDg5eTBkaWw2aSJ9.L5hwBhfK_8aFPp6nTCruwQ';
 let map = new mapboxgl.Map({
     container: 'map', // container id
